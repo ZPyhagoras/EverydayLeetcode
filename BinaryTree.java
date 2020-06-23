@@ -4,7 +4,9 @@ import java.util.Queue;
 public class BinaryTree {
     TreeNode root;
 
-    BinaryTree() {root = null;}
+    BinaryTree() {
+        root = null;
+    }
 
     BinaryTree(int[] nodeVals) {
         root = new TreeNode(nodeVals[0]);
