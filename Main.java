@@ -4,7 +4,7 @@ public class Main {
         Leetcode67 Solution = new Leetcode67();
         System.out.println(Solution.addBinary("1", "11110"));
     }
-
+    /*
     private static void test124() {
         int iMin = Integer.MIN_VALUE;
         int[] vals = {-10, 9, 20, iMin, 999};
@@ -15,4 +15,5 @@ public class Main {
         Leetcode124 Solution = new Leetcode124();
         System.out.println(Solution.maxPathSum(TreeRoot));
     }
+    */
 }
