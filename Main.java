@@ -1,9 +1,6 @@
 public class Main {
     public static void main(String[] args) {
-        Leetcode378 Solution = new Leetcode378();
-        int[][] matrix = new int[][]{{1,5,9},{10,11,13},{12,13,15}};
-        int ans = Solution.kthSmallest(matrix, 8);
-        System.out.println(ans);
+
     }
     /*
     private static void test124() {
