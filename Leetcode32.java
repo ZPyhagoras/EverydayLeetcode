@@ -2,7 +2,7 @@ import java.util.Stack;
 
 public class Leetcode32 {
     public int longestValidParentheses(String s) {
-        return stackSolution(s);
+        return (stackSolution(s) == twiceTraverseSolution(s)) ? stackSolution(s) : -1;
     }
 
     private int stackSolution(String s) {
