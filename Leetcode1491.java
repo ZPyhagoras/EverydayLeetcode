@@ -7,6 +7,6 @@ public class Leetcode1491 {
             maxs = sal > maxs ? sal : maxs;
             sum += sal;
         }
-        return sum / (salary.length - 2);
+        return (sum - mins - maxs) / (salary.length - 2);
     }
 }
