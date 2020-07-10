@@ -1,3 +1,5 @@
+import Datastructure.ListNode;
+
 public class Leetcode206 {
     public ListNode reverseList(ListNode head) {
         if (head == null || head.next == null) {

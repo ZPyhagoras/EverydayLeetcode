@@ -1,3 +1,5 @@
+import Datastructure.ListNode;
+
 public class Leetcode23 {
     public ListNode mergeKLists(ListNode[] lists) {
         ListNode headNode = new ListNode(Integer.MIN_VALUE);

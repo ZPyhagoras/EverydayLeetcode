@@ -1,6 +1,8 @@
 import java.util.LinkedList;
 import java.util.Queue;
 
+import Datastructure.TreeNode;
+
 public class Leetcode112 {
     public boolean hasPathSum(TreeNode root, int sum) {
         if (root == null) {

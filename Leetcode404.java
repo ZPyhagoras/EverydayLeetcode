@@ -1,3 +1,5 @@
+import Datastructure.TreeNode;
+
 public class Leetcode404 {
     public int sumOfLeftLeaves(TreeNode root) {
         if (root == null) {
