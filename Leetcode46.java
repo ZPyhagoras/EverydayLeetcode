@@ -9,7 +9,9 @@ public class Leetcode46 {
             ans.add(new LinkedList<Integer>(tmp));
         }
         for (int i = first; i < n; i++) {
-            Collections.swap();
+            Collections.swap(tmp, first, i);
+            backtrack(first + 1, n);
+            Collections.swap(tmp, first, i);
         }
     }
 
