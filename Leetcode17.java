@@ -6,8 +6,8 @@ import java.util.Map;
 public class Leetcode17 {
     public List<String> letterCombinations(String digits) {
         Map<Character, String> nineMap = new HashMap<>();
-        nineMap.put('2', "abc");  nineMap.put('3', "def");  nineMap.put('4', "ghi");  nineMap.put('5', "jkl");
-        nineMap.put('6', "mno");  nineMap.put('7', "pqrs");  nineMap.put('8', "tuv"); nineMap.put('9', "wxyz");
+        nineMap.put('2', "abc");  nineMap.put('3', "def");   nineMap.put('4', "ghi");  nineMap.put('5', "jkl");
+        nineMap.put('6', "mno");  nineMap.put('7', "pqrs");  nineMap.put('8', "tuv");  nineMap.put('9', "wxyz");
         
         List<String> res = new LinkedList<>();
         int l = digits.length();
