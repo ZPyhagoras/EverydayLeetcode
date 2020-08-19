@@ -1,6 +1,5 @@
 import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.LinkedList;
 import java.util.List;
 import java.util.Map;
 
@@ -10,14 +9,20 @@ public class Leetcode1424 {
         int cnt = 0;
         for (int i = 0; i < nums.size(); i++) {
             for (int j = 0; j < nums.get(i).size(); j++) {
-                transform.getOrDefault(i + j, new ArrayList<>());
+                List<Integer> numList = transform.getOrDefault(i + j, new ArrayList<>());
+                numList.add(nums.get(i).get(j));
+                transform.put(i + j, numList);
+                cnt++;
             }
         }
-        int[] ans = 
-        for (List<Integer> row : transform) {
-            for (Integer n : row) {
-
+        int[] ans = new int[cnt];
+        int pos = 0;
+        for (int i = 0; i < transform.size(); i++) {
+            List<Integer> numList = transform.get(i);
+            for (int j = numList.size() - 1; j >= 0; j--) {
+                ans[pos++] = numList.get(j);
             }
         }
+        return ans;
     }
 }
