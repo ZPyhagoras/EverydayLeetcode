@@ -14,4 +14,42 @@ public class Leetcode647 {
         }
         return cnt;
     }
+
+    public int manacher(String s) {
+        StringBuffer sBuffer = new StringBuffer();
+        sBuffer.append("$#");
+        for (char ch : s.toCharArray()) {
+            sBuffer.append(ch);
+            sBuffer.append('#');
+        }
+        sBuffer.append('^');
+
+        char[] sCharArray = sBuffer.toString().toCharArray();
+        int sLen = sCharArray.length;
+
+        int[] P = new int[sLen - 1];
+        int ans = 0, C = 0, R = 0;
+
+        for (int i = 1; i < sLen - 1; i++) {
+            int i_mirror = 2 * C - i;
+            if (R > i) {
+                P[i] = Math.min(R - i + 1, P[i_mirror]);
+            } 
+            else {
+                P[i] = 1;
+            }
+    
+            while (sCharArray[i + P[i]] == sCharArray[i - P[i]]) {
+                P[i]++;
+            }
+    
+            if (i + P[i] - 1 > R) {
+                C = i;
+                R = i + P[i] - 1;
+            }
+            ans += P[i] / 2;
+        }
+
+        return ans;
+    }
 }
