@@ -4,16 +4,15 @@ import java.util.Map;
 import Datastructure.TreeNode;
 
 public class Leetcode106 {
-    private int[] inOrder;
     private int[] postOrder;
     private Map<Integer, Integer> inorderIndex;
     public TreeNode buildTree(int[] inorder, int[] postorder) {
-        inOrder = inorder;  postOrder = postorder;
+        postOrder = postorder;
         inorderIndex = new HashMap<>();
-        for (int i = 0; i < inOrder.length; i++) {
-            inorderIndex.put(inOrder[i], i);
+        for (int i = 0; i < inorder.length; i++) {
+            inorderIndex.put(inorder[i], i);
         }
-        return Reconstruction(0, inOrder.length, 0, postOrder.length);
+        return Reconstruction(0, inorder.length, 0, postOrder.length);
     }
 
     private TreeNode Reconstruction(int inStart, int inEnd, int postStart, int postEnd) {

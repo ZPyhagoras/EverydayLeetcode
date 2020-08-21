@@ -5,15 +5,14 @@ import Datastructure.TreeNode;
 
 public class Leetcode105 {
     private int[] preOrder;
-    private int[] inOrder;
     private Map<Integer, Integer> inorderIndex;
     public TreeNode buildTree(int[] preorder, int[] inorder) {
-        preOrder = preorder;  inOrder = inorder;
+        preOrder = preorder;
         inorderIndex = new HashMap<>();
-        for (int i = 0; i < inOrder.length; i++) {
-            inorderIndex.put(inOrder[i], i);
+        for (int i = 0; i < inorder.length; i++) {
+            inorderIndex.put(inorder[i], i);
         }
-        return Reconstruction(0, preOrder.length, 0, inOrder.length);
+        return Reconstruction(0, preOrder.length, 0, inorder.length);
     }
 
     private TreeNode Reconstruction(int preStart, int preEnd, int inStart, int inEnd) {
