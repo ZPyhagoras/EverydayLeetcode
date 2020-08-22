@@ -38,24 +38,18 @@ public class Leetcode297 {
 
         nodeQue.offer(root);
         int i = 1;
-        while (!nodeQue.isEmpty()) {
+        while (i < nodeVals.length) {
             TreeNode fNode = nodeQue.poll();
 
             TreeNode leftNode, rightNode;
             leftNode = rightNode = null;
-            if (i < nodeVals.length) {
-                leftNode = stringToNode(nodeVals[i]);  
-                i++;
-            }
+            leftNode = stringToNode(nodeVals[i++]);  
             if (leftNode != null) {
                 fNode.left = leftNode;
                 nodeQue.offer(fNode.left);
             }
 
-            if (i < nodeVals.length) {
-                rightNode = stringToNode(nodeVals[i]);  
-                i++;
-            }
+            rightNode = stringToNode(nodeVals[i++]);  
             if (rightNode != null) {
                 fNode.right = rightNode;
                 nodeQue.offer(fNode.right);
