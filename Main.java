@@ -1,5 +1,3 @@
-import Datastructure.BinaryTree;
-
 public class Main {
     public static void main(String[] args) {
         Leetcode491 Solution = new Leetcode491();
