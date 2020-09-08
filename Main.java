@@ -1,7 +1,8 @@
 public class Main {
     public static void main(String[] args) {
-        Leetcode491 Solution = new Leetcode491();
-        Solution.findSubsequences(new int[]{1,2,3,4,5,6,7,8,9,10,11,12,13,14,15});
+        Leetcode5508 Solution = new Leetcode5508();
+        int ans = Solution.numTriplets(new int[]{1, 1}, new int[]{1, 1, 1});
+        System.out.println(ans);
     }
     /*
     private static void test124() {
