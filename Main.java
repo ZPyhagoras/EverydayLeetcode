@@ -1,8 +1,7 @@
 public class Main {
     public static void main(String[] args) {
-        Leetcode5508 Solution = new Leetcode5508();
-        int ans = Solution.numTriplets(new int[]{1, 1}, new int[]{1, 1, 1});
-        System.out.println(ans);
+        Leetcode40 Solution = new Leetcode40();
+        Solution.combinationSum2(new int[]{1,5,2,4,3}, 0);
     }
     /*
     private static void test124() {
