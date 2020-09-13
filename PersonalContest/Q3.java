@@ -23,8 +23,4 @@ public class Q3 {
         }
         return last[3];
     }
-
-    public static void main(String[] args) {
-        System.out.println(minimumOperations("rrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrry"));
-    }
 }
