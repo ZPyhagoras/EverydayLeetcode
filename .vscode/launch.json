@@ -6,6 +6,27 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - Q3",
+            "request": "launch",
+            "mainClass": "PersonalContest.Q3",
+            "projectName": "EverydayLeetcode_b3c195d8"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Helloword",
+            "request": "launch",
+            "mainClass": "Helloword",
+            "projectName": "EverydayLeetcode_b3c195d8"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Main",
+            "request": "launch",
+            "mainClass": "Main",
+            "projectName": "EverydayLeetcode_b3c195d8"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - hello",
             "request": "launch",
             "mainClass": "hello",

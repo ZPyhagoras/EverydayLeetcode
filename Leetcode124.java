@@ -1,3 +1,5 @@
+import Datastructure.TreeNode;
+
 public class Leetcode124 {
     private int ans = Integer.MIN_VALUE;
     public int maxPathSum(TreeNode root) {

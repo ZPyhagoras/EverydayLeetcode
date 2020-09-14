@@ -1,14 +1,16 @@
+package Datastructure;
+
 import java.util.LinkedList;
 import java.util.Queue;
 
 public class BinaryTree {
-    TreeNode root;
+    public TreeNode root;
 
-    BinaryTree() {
+    public BinaryTree() {
         root = null;
     }
 
-    BinaryTree(int[] nodeVals) {
+    public BinaryTree(int[] nodeVals) {
         root = new TreeNode(nodeVals[0]);
         Queue<TreeNode> qNodes = new LinkedList<>();
         qNodes.add(root);
@@ -36,7 +38,7 @@ public class BinaryTree {
         }
     }
 
-    void prettyPrintTree(TreeNode node, String prefix, boolean isLeft) {
+    private void prettyPrintTree(TreeNode node, String prefix, boolean isLeft) {
         if (node == null) {
             System.out.println("Empty tree");
             return;
@@ -53,7 +55,7 @@ public class BinaryTree {
         }
     }
 
-    void prettyPrintTree() {
+    public void prettyPrintTree() {
         prettyPrintTree(root,  "", true);
     }
 }
