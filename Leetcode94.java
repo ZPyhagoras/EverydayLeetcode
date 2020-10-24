@@ -1,7 +1,12 @@
+import java.util.ArrayList;
+import java.util.List;
+
+import Datastructure.TreeNode;
+
 public class Leetcode94 {
     class Solution {
         public List<Integer> inorderTraversal(TreeNode root) {
-            List<Integer> res = new ArrayList<Integer>();
+            List<Integer> res = new ArrayList<>();
             TreeNode predecessor = null;
     
             while (root != null) {
