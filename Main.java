@@ -1,7 +1,8 @@
 public class Main {
     public static void main(String[] args) {
-        Leetcode40 Solution = new Leetcode40();
-        Solution.combinationSum2(new int[]{1,5,2,4,3}, 0);
+        Leetcode402 Solution = new Leetcode402();
+        String ans = Solution.removeKdigits("1432219", 3);
+        System.out.println(ans);
     }
     /*
     private static void test124() {

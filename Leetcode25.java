@@ -1,5 +1,3 @@
-import java.util.List;
-
 import Datastructure.ListNode;
 
 public class Leetcode25 {
